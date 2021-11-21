@@ -1,0 +1,17 @@
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Extensions.deps.json
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Extensions.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\ref\Myrmica.Extensions.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Extensions.pdb
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Data.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Entity.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Data.pdb
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Entity.pdb
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.csproj.AssemblyReference.cache
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.AssemblyInfoInputs.cache
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.AssemblyInfo.cs
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.csproj.CoreCompileInputs.cache
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.csproj.CopyComplete
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\ref\Myrmica.Extensions.dll
+D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.pdb

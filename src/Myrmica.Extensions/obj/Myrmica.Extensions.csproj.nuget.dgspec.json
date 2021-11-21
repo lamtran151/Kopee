@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {}
+  },
+  "projects": {
+    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
+        "projectName": "Myrmica.Data",
+        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
+        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
+                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
+        "projectName": "Myrmica.Entity",
+        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
+        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
+        "projectName": "Myrmica.Extensions",
+        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
+        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
+                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
