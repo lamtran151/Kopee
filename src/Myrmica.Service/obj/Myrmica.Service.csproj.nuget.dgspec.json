@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj": {}
+    "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj": {}
   },
   "projects": {
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj": {
+    "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
+        "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
         "projectName": "Myrmica.Service",
-        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Service\\obj\\",
+        "projectPath": "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "outputPath": "D:\\Kopee\\src\\Myrmica.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

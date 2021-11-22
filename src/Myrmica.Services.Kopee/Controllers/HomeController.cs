@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Myrmica.Data;
 using Myrmica.Entity;
+using System.Linq;
 
 namespace Myrmica.Services.Kopee.Controllers
 {
@@ -16,8 +17,8 @@ namespace Myrmica.Services.Kopee.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var a = _repository.Table;
-            return Ok();
+            var a = _repository.Table.ToList();
+            return Ok(a);
         }
     }
 }

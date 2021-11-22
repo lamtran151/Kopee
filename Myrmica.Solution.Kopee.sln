@@ -11,17 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Myrmica.Library", "Myrmica.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Myrmica.Infrastructure", "Myrmica.Infrastructure", "{3BC5A247-F81F-44FE-9180-EEB76A18CCAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Repository", "src\Myrmica.Repository\Myrmica.Repository.csproj", "{FF5BA047-2268-4BA8-9BF7-65AC752CABBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Repository", "src\Myrmica.Repository\Myrmica.Repository.csproj", "{FF5BA047-2268-4BA8-9BF7-65AC752CABBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Service", "src\Myrmica.Service\Myrmica.Service.csproj", "{B9F2C43E-0425-49AF-9C47-F90BAFEB639F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Service", "src\Myrmica.Service\Myrmica.Service.csproj", "{B9F2C43E-0425-49AF-9C47-F90BAFEB639F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Data", "src\Myrmica.Data\Myrmica.Data.csproj", "{30CB46CE-E19E-4BA8-9822-1CD2A7260849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Data", "src\Myrmica.Data\Myrmica.Data.csproj", "{30CB46CE-E19E-4BA8-9822-1CD2A7260849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Entity", "src\Myrmica.Entity\Myrmica.Entity.csproj", "{36001973-A487-4083-ABBD-46A5BA9D6740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Entity", "src\Myrmica.Entity\Myrmica.Entity.csproj", "{36001973-A487-4083-ABBD-46A5BA9D6740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Extensions", "src\Myrmica.Extensions\Myrmica.Extensions.csproj", "{9E650290-5780-4B2A-8DFC-BA646F8B20B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Extensions", "src\Myrmica.Extensions\Myrmica.Extensions.csproj", "{9E650290-5780-4B2A-8DFC-BA646F8B20B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Services.Kopee", "src\Myrmica.Services.Kopee\Myrmica.Services.Kopee.csproj", "{878FF2D6-2347-4D1F-A947-2E255460228B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Myrmica.Services.Kopee", "src\Myrmica.Services.Kopee\Myrmica.Services.Kopee.csproj", "{878FF2D6-2347-4D1F-A947-2E255460228B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myrmica.Database.MySQL", "src\Myrmica.Database\Myrmica.Database.MySQL.csproj", "{782A2FF6-4FBB-451F-B4EC-7B437A47B422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{878FF2D6-2347-4D1F-A947-2E255460228B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{878FF2D6-2347-4D1F-A947-2E255460228B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{878FF2D6-2347-4D1F-A947-2E255460228B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782A2FF6-4FBB-451F-B4EC-7B437A47B422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782A2FF6-4FBB-451F-B4EC-7B437A47B422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782A2FF6-4FBB-451F-B4EC-7B437A47B422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782A2FF6-4FBB-451F-B4EC-7B437A47B422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{36001973-A487-4083-ABBD-46A5BA9D6740} = {20DC6D7A-33CF-4A62-A2E9-C0A1347F77B7}
 		{9E650290-5780-4B2A-8DFC-BA646F8B20B8} = {F07469C1-A7DA-4E82-9145-7E97F4DE354D}
 		{878FF2D6-2347-4D1F-A947-2E255460228B} = {9F0693DF-15AE-4186-B9B3-57C7FEEA4382}
+		{782A2FF6-4FBB-451F-B4EC-7B437A47B422} = {20DC6D7A-33CF-4A62-A2E9-C0A1347F77B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F776D26B-4D45-4E80-8754-4E1465C08A2F}

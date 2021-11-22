@@ -21,7 +21,7 @@ namespace Myrmica.Data
         /// </summary>
         /// <typeparam name="TEntity">Entity type</typeparam>
         /// <returns>A set for the given entity type</returns>
-        DbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity;
+        DbSet<TEntity> Set<TEntity>() where TEntity : BASE_ENTITY;
 
         /// <summary>
         /// Saves all changes made in this context to the database
@@ -57,7 +57,7 @@ namespace Myrmica.Data
         /// <param name="sql">The raw SQL query</param>
         /// <param name="parameters">The values to be assigned to parameters</param>
         /// <returns>An IQueryable representing the raw SQL query</returns>
-        //IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BaseEntity;
+        //IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BASE_ENTITY;
 
         /// <summary>
         /// Executes the given SQL against the database
@@ -74,7 +74,7 @@ namespace Myrmica.Data
         /// </summary>
         /// <typeparam name="TEntity">Entity type</typeparam>
         /// <param name="entity">Entity</param>
-        void Detach<TEntity>(TEntity entity) where TEntity : BaseEntity;
+        void Detach<TEntity>(TEntity entity) where TEntity : BASE_ENTITY;
 
         #endregion
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m2/jjVRMCUAfW1jmYgm7Pi5VDhoSbHPlT5bIb5HKLmf/VwW8SxX5+IqI2fuIuDjgwI7scg9qdjZo7X9CyRZcbg==",
+  "dgSpecHash": "gsMYXClgNzrSt5p2Wm7Jn29RmqWv0eHxpaxLoOzGh8v5Zka+rB5iphzx/0TZxlhE6204d4YillAb5wugHBNqHA==",
   "success": true,
-  "projectFilePath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
+  "projectFilePath": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

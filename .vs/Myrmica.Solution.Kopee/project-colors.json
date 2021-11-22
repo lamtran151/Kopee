@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "878ff2d6-2347-4d1f-a947-2e255460228b": {
+      "ProjectGuid": "878ff2d6-2347-4d1f-a947-2e255460228b",
+      "DisplayName": "Myrmica.Services.Kopee",
+      "ColorIndex": 0
+    },
+    "36001973-a487-4083-abbd-46a5ba9d6740": {
+      "ProjectGuid": "36001973-a487-4083-abbd-46a5ba9d6740",
+      "DisplayName": "Myrmica.Entity",
+      "ColorIndex": 1
+    },
+    "30cb46ce-e19e-4ba8-9822-1cd2a7260849": {
+      "ProjectGuid": "30cb46ce-e19e-4ba8-9822-1cd2a7260849",
+      "DisplayName": "Myrmica.Data",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "782a2ff6-4fbb-451f-b4ec-7b437a47b422": {
+      "ProjectGuid": "782a2ff6-4fbb-451f-b4ec-7b437a47b422",
+      "DisplayName": "Myrmica.Database.MySQL",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

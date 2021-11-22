@@ -77,7 +77,7 @@ namespace Myrmica.Data
         /// </summary>
         /// <typeparam name="TEntity">Entity type</typeparam>
         /// <returns>A set for the given entity type</returns>
-        public virtual new DbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity
+        public virtual new DbSet<TEntity> Set<TEntity>() where TEntity : BASE_ENTITY
         {
             return base.Set<TEntity>();
         }
@@ -110,7 +110,7 @@ namespace Myrmica.Data
         ///// <param name="sql">The raw SQL query</param>
         ///// <param name="parameters">The values to be assigned to parameters</param>
         ///// <returns>An IQueryable representing the raw SQL query</returns>
-        //public virtual IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BaseEntity
+        //public virtual IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BASE_ENTITY
         //{
         //    return Set<TEntity>().FromSqlRaw(CreateSqlWithParameters(sql, parameters), parameters);
         //}
@@ -153,7 +153,7 @@ namespace Myrmica.Data
         /// </summary>
         /// <typeparam name="TEntity">Entity type</typeparam>
         /// <param name="entity">Entity</param>
-        public virtual void Detach<TEntity>(TEntity entity) where TEntity : BaseEntity
+        public virtual void Detach<TEntity>(TEntity entity) where TEntity : BASE_ENTITY
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));

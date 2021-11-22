@@ -14,7 +14,7 @@ namespace Myrmica.Data.Mapping
         public override void Configure(EntityTypeBuilder<Demo> builder)
         {
             builder.ToTable("Demo");
-            builder.HasKey(c => c.Id);
+            builder.HasKey(c => c.ID);
 
             builder.Property(c => c.Name).IsRequired();
 

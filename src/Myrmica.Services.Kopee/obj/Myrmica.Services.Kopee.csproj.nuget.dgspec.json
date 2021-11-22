@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj": {}
+    "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj": {}
   },
   "projects": {
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
+    "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
+        "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
         "projectName": "Myrmica.Data",
-        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\obj\\",
+        "projectPath": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "outputPath": "D:\\Kopee\\src\\Myrmica.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
-                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj"
+              "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
+                "projectPath": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj"
               }
             }
           }
@@ -47,6 +51,12 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
@@ -72,17 +82,21 @@
         }
       }
     },
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
+    "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
+        "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
         "projectName": "Myrmica.Entity",
-        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Entity\\obj\\",
+        "projectPath": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "outputPath": "D:\\Kopee\\src\\Myrmica.Entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,17 +140,21 @@
         }
       }
     },
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {
+    "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
+        "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
         "projectName": "Myrmica.Extensions",
-        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\obj\\",
+        "projectPath": "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "outputPath": "D:\\Kopee\\src\\Myrmica.Extensions\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,8 +168,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
-                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj"
+              "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
+                "projectPath": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj"
               }
             }
           }
@@ -194,17 +212,21 @@
         }
       }
     },
-    "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj": {
+    "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
+        "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
         "projectName": "Myrmica.Services.Kopee",
-        "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Services.Kopee\\obj\\",
+        "projectPath": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "outputPath": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,11 +240,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
-                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj"
+              "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj": {
+                "projectPath": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj"
               },
-              "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {
-                "projectPath": "D:\\CodeCuaTao\\Kopee\\Myrmica.Solution.Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj"
+              "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj": {
+                "projectPath": "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj"
               }
             }
           }
@@ -238,6 +260,12 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
             },

@@ -10,3 +10,15 @@ D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Service\obj\Debug\net5.0\
 D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.dll
 D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Service\obj\Debug\net5.0\ref\Myrmica.Service.dll
 D:\CodeCuaTao\Kopee\Myrmica.Solution.Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.pdb
+D:\Kopee\src\Myrmica.Service\bin\Debug\net5.0\Myrmica.Service.deps.json
+D:\Kopee\src\Myrmica.Service\bin\Debug\net5.0\Myrmica.Service.dll
+D:\Kopee\src\Myrmica.Service\bin\Debug\net5.0\ref\Myrmica.Service.dll
+D:\Kopee\src\Myrmica.Service\bin\Debug\net5.0\Myrmica.Service.pdb
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.csproj.AssemblyReference.cache
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.AssemblyInfoInputs.cache
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.AssemblyInfo.cs
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.csproj.CoreCompileInputs.cache
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.dll
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\ref\Myrmica.Service.dll
+D:\Kopee\src\Myrmica.Service\obj\Debug\net5.0\Myrmica.Service.pdb

@@ -13,7 +13,7 @@ namespace Myrmica.Data
     /// Represents the Entity Framework repository
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
-    public partial class EfRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    public partial class EfRepository<TEntity> : IRepository<TEntity> where TEntity : BASE_ENTITY
     {
         #region Fields
 

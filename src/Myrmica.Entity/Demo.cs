@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Myrmica.Entity
 {
-    public class Demo:BaseEntity
+    public class Demo:BASE_ENTITY
     {
         public string Name { get; set; }
         public int Age { get; set; }

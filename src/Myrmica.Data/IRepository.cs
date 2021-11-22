@@ -12,7 +12,7 @@ namespace Myrmica.Data
     /// Represents an entity repository
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
-    public partial interface IRepository<TEntity> where TEntity : BaseEntity
+    public partial interface IRepository<TEntity> where TEntity : BASE_ENTITY
     {
         #region Methods
 
