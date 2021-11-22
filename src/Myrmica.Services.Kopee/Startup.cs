@@ -25,6 +25,7 @@ namespace Myrmica.Services.Kopee
         }
 
         public IConfiguration Configuration { get; }
+        private string MigrationsAssembly = typeof(Startup).Namespace;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -35,10 +36,11 @@ namespace Myrmica.Services.Kopee
                 options.UseMySql(connectionString,
                     ServerVersion.AutoDetect(connectionString),
                     mySqlOptions =>
-                        mySqlOptions.EnableRetryOnFailure(
-                            maxRetryCount: 10,
-                            maxRetryDelay: TimeSpan.FromSeconds(30),
-                            errorNumbersToAdd: null)
+                        //mySqlOptions.EnableRetryOnFailure(
+                        //    maxRetryCount: 10,
+                        //    maxRetryDelay: TimeSpan.FromSeconds(30),
+                        //    errorNumbersToAdd: null)
+                        mySqlOptions.MigrationsAssembly(MigrationsAssembly)
             );
             });
             services.AddAdminServices<NopObjectContext>();

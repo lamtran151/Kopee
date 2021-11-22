@@ -84,3 +84,5 @@ D:\Kopee\src\Myrmica.Services.Kopee\obj\Debug\net5.0\Myrmica.Services.Kopee.pdb
 D:\Kopee\src\Myrmica.Services.Kopee\obj\Debug\net5.0\Myrmica.Services.Kopee.genruntimeconfig.cache
 D:\Kopee\src\Myrmica.Services.Kopee\bin\Debug\net5.0\Humanizer.dll
 D:\Kopee\src\Myrmica.Services.Kopee\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Kopee\src\Myrmica.Services.Kopee\bin\Debug\net5.0\Myrmica.Database.MySQL.dll
+D:\Kopee\src\Myrmica.Services.Kopee\bin\Debug\net5.0\Myrmica.Database.MySQL.pdb

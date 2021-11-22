@@ -35,7 +35,9 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.Design": "5.0.12",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.12",
           "Myrmica.Data": "1.0.0",
+          "Myrmica.Database.MySQL": "1.0.0",
           "Myrmica.Extensions": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "5.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -397,6 +399,11 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/5.0.12": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "5.0.12"
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
         "dependencies": {
@@ -458,6 +465,30 @@
         }
       },
       "Microsoft.Extensions.Primitives/5.0.0": {},
+      "Microsoft.NETCore.App/2.2.2": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostPolicy": "2.2.2",
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "compile": {
+          "ref/netcoreapp2.2/System.Runtime.InteropServices.WindowsRuntime.dll": {}
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/2.2.2": {},
+      "Microsoft.NETCore.DotNetHostPolicy/2.2.2": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "2.2.2"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/2.2.2": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "2.2.2"
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.2.0": {},
+      "Microsoft.NETCore.Targets/2.0.0": {},
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -478,6 +509,11 @@
         },
         "compile": {
           "lib/net5.0/MySqlConnector.dll": {}
+        }
+      },
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0"
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/5.0.0": {
@@ -567,6 +603,19 @@
         },
         "compile": {
           "Myrmica.Data.dll": {}
+        }
+      },
+      "Myrmica.Database.MySQL/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.2.2",
+          "Myrmica.Data": "1.0.0",
+          "Myrmica.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Myrmica.Database.MySQL.dll": {}
+        },
+        "compile": {
+          "Myrmica.Database.MySQL.dll": {}
         }
       },
       "Myrmica.Entity/1.0.0": {
@@ -2327,6 +2376,13 @@
       "path": "microsoft.entityframeworkcore.relational/5.0.12",
       "hashPath": "microsoft.entityframeworkcore.relational.5.0.12.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Tools/5.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fk6P7PZmbN/148oR2RBTnCWsTMdNKlOL/OgF6HJOY8HBbNLIdW720hYIbckmwQ6kad2gaKGXYoW9tDDu69cCQA==",
+      "path": "microsoft.entityframeworkcore.tools/5.0.12",
+      "hashPath": "microsoft.entityframeworkcore.tools.5.0.12.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2397,6 +2453,48 @@
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
     },
+    "Microsoft.NETCore.App/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DUDuX+jF3fxwfC5dYB5vMjEJ5J4du0XsE/3m/iFl5tb4nZRwjTyJu8xWqH1jGygmBQYVJ1zBWN/m/YR3ajFE2g==",
+      "path": "microsoft.netcore.app/2.2.2",
+      "hashPath": "microsoft.netcore.app.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetAppHost/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-65BVP7ELyq3m2FyV9ZKl4/OwYDI2u/LmrFtZhRX06fogdrokXitvMCTtrxZt5AfmrkaiQKf8n2sZpY8GuYI2kw==",
+      "path": "microsoft.netcore.dotnetapphost/2.2.2",
+      "hashPath": "microsoft.netcore.dotnetapphost.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostPolicy/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WX/L/n0fvY5a/5x+tldWhj4ukBStU2kUvnxYY1wId53YFVFEVQJGIgOWHCJETDkokAMXtC9iEpTtVGsTsGCOjg==",
+      "path": "microsoft.netcore.dotnethostpolicy/2.2.2",
+      "hashPath": "microsoft.netcore.dotnethostpolicy.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QoR8G7cGN2hnJvWwcST9w1+JR1lf3y1dU39slsyKJCjcbxvD8uywSkigwTus9actuwSoDRJXG4Jzvp+WMVW8LA==",
+      "path": "microsoft.netcore.dotnethostresolver/2.2.2",
+      "hashPath": "microsoft.netcore.dotnethostresolver.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T/J+XZo+YheFTJh8/4uoeJDdz5qOmOMkjg6/VL8mHJ9AnP8+fmV/kcbxeXsob0irRNiChf+V0ig1MCRLp/+Kog==",
+      "path": "microsoft.netcore.platforms/2.2.0",
+      "hashPath": "microsoft.netcore.platforms.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
+      "path": "microsoft.netcore.targets/2.0.0",
+      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
@@ -2410,6 +2508,13 @@
       "sha512": "sha512-cceT5xpMPgInT8sVnmhZ62aouEux6dWJjOaMSsYW0TmLvK+gwG0eKw8J9NklTw+Q5Cch9Sd04OBux3GSITvABw==",
       "path": "mysqlconnector/1.3.7",
       "hashPath": "mysqlconnector.1.3.7.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/5.0.0": {
       "type": "package",
@@ -2468,6 +2573,11 @@
       "hashPath": "system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
     },
     "Myrmica.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Myrmica.Database.MySQL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
