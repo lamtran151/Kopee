@@ -89,55 +89,55 @@ namespace Myrmica.Entity
 
         public IQueryable<T> SourceQuery { get; private set; }
 
-        //public IPagedList<T> AlterQuery(Func<IQueryable<T>, IQueryable<T>> alterer)
-        //{
-        //    var result = alterer?.Invoke(SourceQuery);
-        //    SourceQuery = result ?? throw new InvalidOperationException("The '{0}' delegate must not return NULL.");
+        public IPagedList<T> AlterQuery(Func<IQueryable<T>, IQueryable<T>> alterer)
+        {
+            var result = alterer?.Invoke(SourceQuery);
+            SourceQuery = result ?? throw new InvalidOperationException("The '{0}' delegate must not return NULL.");
 
-        //    return this;
-        //}
+            return this;
+        }
 
-        //public IQueryable<T> ApplyPaging(IQueryable<T> query)
-        //{
-        //    if (PageIndex == 0 && PageSize == int.MaxValue)
-        //    {
-        //        // Paging unnecessary
-        //        return query;
-        //    }
-        //    else
-        //    {
-        //        var skip = PageIndex * PageSize;
-        //        return query.Skip(skip).Take(PageSize);
-        //    }
-        //}
+        public IQueryable<T> ApplyPaging(IQueryable<T> query)
+        {
+            if (PageIndex == 0 && PageSize == int.MaxValue)
+            {
+                // Paging unnecessary
+                return query;
+            }
+            else
+            {
+                var skip = PageIndex * PageSize;
+                return query.Skip(skip).Take(PageSize);
+            }
+        }
 
-        //public IPagedList<T> Load(bool force = false)
-        //{
-        //    // Returns instance for chaining.
-        //    if (force && _list != null)
-        //    {
-        //        _list.Clear();
-        //        _list = null;
-        //    }
+        public IPagedList<T> Load(bool force = false)
+        {
+            // Returns instance for chaining.
+            if (force && _list != null)
+            {
+                _list.Clear();
+                _list = null;
+            }
 
-        //    EnsureIsLoaded();
+            EnsureIsLoaded();
 
-        //    return this;
-        //}
+            return this;
+        }
 
-        //public async Task<IPagedList<T>> LoadAsync(bool force = false)
-        //{
-        //    // Returns instance for chaining.
-        //    if (force && _list != null)
-        //    {
-        //        _list.Clear();
-        //        _list = null;
-        //    }
+        public async Task<IPagedList<T>> LoadAsync(bool force = false)
+        {
+            // Returns instance for chaining.
+            if (force && _list != null)
+            {
+                _list.Clear();
+                _list = null;
+            }
 
-        //    await EnsureIsLoadedAsync();
+            await EnsureIsLoadedAsync();
 
-        //    return this;
-        //}
+            return this;
+        }
 
         public int PageIndex { get; set; }
 
@@ -330,16 +330,16 @@ namespace Myrmica.Entity
             }
         }
 
-        //IEnumerator IEnumerable.GetEnumerator()
-        //{
-        //    return this.GetEnumerator();
-        //}
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
 
-        //public IEnumerator<T> GetEnumerator()
-        //{
-        //    EnsureIsLoaded();
-        //    return _list.GetEnumerator();
-        //}
+        public IEnumerator<T> GetEnumerator()
+        {
+            EnsureIsLoaded();
+            return _list.GetEnumerator();
+        }
 
         #endregion
 

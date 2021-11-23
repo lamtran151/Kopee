@@ -126,7 +126,6 @@ namespace Myrmica.Service
         public async Task<IPagedList<CategoryDto>> GetPagedCategoriesAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await _categoryRepository.GetPagedCategoriesAsync(keyword, pageNumber, pageSize);
-            listEntity.Data = listEntity.Data.ToListDto();
             return listEntity.ToDto();
         }
     }
