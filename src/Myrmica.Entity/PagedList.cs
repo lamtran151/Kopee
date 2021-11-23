@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Myrmica.Entity
 {
-    public class PagedList<T> : IPagedList<T>, IReadOnlyList<T>, IReadOnlyCollection<T>
+    public class PagedList<T> : IPagedList<T>
     {
         private bool _queryIsPagedAlready;
         private int? _totalCount;
@@ -37,7 +37,7 @@ namespace Myrmica.Entity
             Guard.NotNull(source, nameof(source));
             Guard.PagingArgsValid(pageIndex, pageSize, "pageIndex", "pageSize");
 
-            SourceQuery = source;
+            SourceQuery = source.ToList();
             PageIndex = pageIndex;
             PageSize = pageSize;
 
@@ -45,99 +45,99 @@ namespace Myrmica.Entity
             _queryIsPagedAlready = totalCount.HasValue;
         }
 
-        private void EnsureIsLoaded()
-        {
-            if (_list == null)
-            {
-                if (_totalCount == null)
-                {
-                    _totalCount = SourceQuery.Count();
-                }
+        //private void EnsureIsLoaded()
+        //{
+        //    if (_list == null)
+        //    {
+        //        if (_totalCount == null)
+        //        {
+        //            _totalCount = SourceQuery.Count();
+        //        }
 
-                if (_queryIsPagedAlready)
-                {
-                    _list = SourceQuery.ToList();
-                }
-                else
-                {
-                    _list = ApplyPaging(SourceQuery).ToList();
-                }
-            }
-        }
+        //        if (_queryIsPagedAlready)
+        //        {
+        //            _list = SourceQuery.ToList();
+        //        }
+        //        else
+        //        {
+        //            _list = ApplyPaging(SourceQuery).ToList();
+        //        }
+        //    }
+        //}
 
-        private async Task EnsureIsLoadedAsync()
-        {
-            if (_list == null)
-            {
-                if (_totalCount == null)
-                {
-                    _totalCount = SourceQuery.Count();
-                }
+        //private async Task EnsureIsLoadedAsync()
+        //{
+        //    if (_list == null)
+        //    {
+        //        if (_totalCount == null)
+        //        {
+        //            _totalCount = SourceQuery.Count();
+        //        }
 
-                if (_queryIsPagedAlready)
-                {
-                    _list = await SourceQuery.ToListAsync();
-                }
-                else
-                {
-                    _list = await ApplyPaging(SourceQuery).ToListAsync();
-                }
-            }
-        }
+        //        if (_queryIsPagedAlready)
+        //        {
+        //            _list = await SourceQuery.ToListAsync();
+        //        }
+        //        else
+        //        {
+        //            _list = await ApplyPaging(SourceQuery).ToListAsync();
+        //        }
+        //    }
+        //}
 
         #region IPageable Members
 
-        public IQueryable<T> SourceQuery { get; private set; }
+        public List<T> SourceQuery { get; private set; }
 
-        public IPagedList<T> AlterQuery(Func<IQueryable<T>, IQueryable<T>> alterer)
-        {
-            var result = alterer?.Invoke(SourceQuery);
-            SourceQuery = result ?? throw new InvalidOperationException("The '{0}' delegate must not return NULL.");
+        //public IPagedList<T> AlterQuery(Func<IQueryable<T>, IQueryable<T>> alterer)
+        //{
+        //    var result = alterer?.Invoke(SourceQuery);
+        //    SourceQuery = result ?? throw new InvalidOperationException("The '{0}' delegate must not return NULL.");
 
-            return this;
-        }
+        //    return this;
+        //}
 
-        public IQueryable<T> ApplyPaging(IQueryable<T> query)
-        {
-            if (PageIndex == 0 && PageSize == int.MaxValue)
-            {
-                // Paging unnecessary
-                return query;
-            }
-            else
-            {
-                var skip = PageIndex * PageSize;
-                return query.Skip(skip).Take(PageSize);
-            }
-        }
+        //public IQueryable<T> ApplyPaging(IQueryable<T> query)
+        //{
+        //    if (PageIndex == 0 && PageSize == int.MaxValue)
+        //    {
+        //        // Paging unnecessary
+        //        return query;
+        //    }
+        //    else
+        //    {
+        //        var skip = PageIndex * PageSize;
+        //        return query.Skip(skip).Take(PageSize);
+        //    }
+        //}
 
-        public IPagedList<T> Load(bool force = false)
-        {
-            // Returns instance for chaining.
-            if (force && _list != null)
-            {
-                _list.Clear();
-                _list = null;
-            }
+        //public IPagedList<T> Load(bool force = false)
+        //{
+        //    // Returns instance for chaining.
+        //    if (force && _list != null)
+        //    {
+        //        _list.Clear();
+        //        _list = null;
+        //    }
 
-            EnsureIsLoaded();
+        //    EnsureIsLoaded();
 
-            return this;
-        }
+        //    return this;
+        //}
 
-        public async Task<IPagedList<T>> LoadAsync(bool force = false)
-        {
-            // Returns instance for chaining.
-            if (force && _list != null)
-            {
-                _list.Clear();
-                _list = null;
-            }
+        //public async Task<IPagedList<T>> LoadAsync(bool force = false)
+        //{
+        //    // Returns instance for chaining.
+        //    if (force && _list != null)
+        //    {
+        //        _list.Clear();
+        //        _list = null;
+        //    }
 
-            await EnsureIsLoadedAsync();
+        //    await EnsureIsLoadedAsync();
 
-            return this;
-        }
+        //    return this;
+        //}
 
         public int PageIndex { get; set; }
 
@@ -146,7 +146,16 @@ namespace Myrmica.Entity
         {
             get
             {
-                return _list.ToList();
+                if (PageIndex == 0 && PageSize == int.MaxValue)
+                {
+                    // Paging unnecessary
+                    return SourceQuery.ToList();
+                }
+                else
+                {
+                    var skip = PageIndex * PageSize;
+                    return SourceQuery.Skip(skip).Take(PageSize).ToList();
+                }
             }
             set { }
         }
@@ -245,117 +254,117 @@ namespace Myrmica.Entity
 
         #region IList<T> Members
 
-        public void Add(T item)
-        {
-            EnsureIsLoaded();
-            _list.Add(item);
-        }
+        //public void Add(T item)
+        //{
+        //    EnsureIsLoaded();
+        //    _list.Add(item);
+        //}
 
-        public void Clear()
-        {
-            if (_list != null)
-            {
-                _list.Clear();
-                _list = null;
-            }
-        }
+        //public void Clear()
+        //{
+        //    if (_list != null)
+        //    {
+        //        _list.Clear();
+        //        _list = null;
+        //    }
+        //}
 
-        public bool Contains(T item)
-        {
-            EnsureIsLoaded();
-            return _list.Contains(item);
-        }
+        //public bool Contains(T item)
+        //{
+        //    EnsureIsLoaded();
+        //    return _list.Contains(item);
+        //}
 
-        public void CopyTo(T[] array, int arrayIndex)
-        {
-            EnsureIsLoaded();
-            _list.CopyTo(array, arrayIndex);
-        }
+        //public void CopyTo(T[] array, int arrayIndex)
+        //{
+        //    EnsureIsLoaded();
+        //    _list.CopyTo(array, arrayIndex);
+        //}
 
-        public bool Remove(T item)
-        {
-            if (_list != null)
-            {
-                return _list.Remove(item);
-            }
+        //public bool Remove(T item)
+        //{
+        //    if (_list != null)
+        //    {
+        //        return _list.Remove(item);
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
 
-        public int Count
-        {
-            get
-            {
-                EnsureIsLoaded();
-                return _list.Count;
-            }
-        }
+        //public int Count
+        //{
+        //    get
+        //    {
+        //        EnsureIsLoaded();
+        //        return _list.Count;
+        //    }
+        //}
 
-        public bool IsReadOnly
-        {
-            get { return false; }
-        }
+        //public bool IsReadOnly
+        //{
+        //    get { return false; }
+        //}
 
-        public int IndexOf(T item)
-        {
-            EnsureIsLoaded();
-            return _list.IndexOf(item);
-        }
+        //public int IndexOf(T item)
+        //{
+        //    EnsureIsLoaded();
+        //    return _list.IndexOf(item);
+        //}
 
-        public void Insert(int index, T item)
-        {
-            EnsureIsLoaded();
-            _list.Insert(index, item);
-        }
+        //public void Insert(int index, T item)
+        //{
+        //    EnsureIsLoaded();
+        //    _list.Insert(index, item);
+        //}
 
-        public void RemoveAt(int index)
-        {
-            if (_list != null)
-            {
-                _list.RemoveAt(index);
-            }
-        }
+        //public void RemoveAt(int index)
+        //{
+        //    if (_list != null)
+        //    {
+        //        _list.RemoveAt(index);
+        //    }
+        //}
 
-        public T this[int index]
-        {
-            get
-            {
-                EnsureIsLoaded();
-                return _list[index];
-            }
-            set
-            {
-                EnsureIsLoaded();
-                _list[index] = value;
-            }
-        }
+        //public T this[int index]
+        //{
+        //    get
+        //    {
+        //        EnsureIsLoaded();
+        //        return _list[index];
+        //    }
+        //    set
+        //    {
+        //        EnsureIsLoaded();
+        //        _list[index] = value;
+        //    }
+        //}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return this.GetEnumerator();
-        }
+        //IEnumerator IEnumerable.GetEnumerator()
+        //{
+        //    return this.GetEnumerator();
+        //}
 
-        public IEnumerator<T> GetEnumerator()
-        {
-            EnsureIsLoaded();
-            return _list.GetEnumerator();
-        }
+        //public IEnumerator<T> GetEnumerator()
+        //{
+        //    EnsureIsLoaded();
+        //    return _list.GetEnumerator();
+        //}
 
         #endregion
 
         #region Utils
 
-        public void AddRange(IEnumerable<T> collection)
-        {
-            EnsureIsLoaded();
-            _list.AddRange(collection);
-        }
+        //public void AddRange(IEnumerable<T> collection)
+        //{
+        //    EnsureIsLoaded();
+        //    _list.AddRange(collection);
+        //}
 
-        public ReadOnlyCollection<T> AsReadOnly()
-        {
-            EnsureIsLoaded();
-            return _list.AsReadOnly();
-        }
+        //public ReadOnlyCollection<T> AsReadOnly()
+        //{
+        //    EnsureIsLoaded();
+        //    return _list.AsReadOnly();
+        //}
 
         #endregion
     }
