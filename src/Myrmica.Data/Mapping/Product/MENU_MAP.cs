@@ -16,6 +16,12 @@ namespace Myrmica.Data.Mapping
             builder.ToTable("MENU");
             builder.HasKey(c => c.ID);
 
+            builder.HasOne(s => s.PARENT_MENU)
+                .WithMany(g => g.CHILD_MENU)
+                .HasForeignKey(s => s.PARENT_ID)
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.SetNull);
+
             base.Configure(builder);
         }
     }

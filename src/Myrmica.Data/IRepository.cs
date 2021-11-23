@@ -21,25 +21,25 @@ namespace Myrmica.Data
         /// </summary>
         /// <param name="id">Identifier</param>
         /// <returns>Entity</returns>
-        TEntity GetById(object id);
+        TEntity Find(object id);
 
-        Task<TEntity> GetByIdAsync(object id);
+        Task<TEntity> FindAsync(object id);
 
         /// <summary>
         /// Insert entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        void Insert(TEntity entity);
+        void Add(TEntity entity);
 
-        Task InsertAsync(TEntity entity);
+        Task AddAsync(TEntity entity);
 
         /// <summary>
         /// Insert entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        void Insert(IEnumerable<TEntity> entities);
+        void Add(IEnumerable<TEntity> entities);
 
-        Task InsertAsync(IEnumerable<TEntity> entities);
+        Task AddAsync(IEnumerable<TEntity> entities);
 
         /// <summary>
         /// Update entity

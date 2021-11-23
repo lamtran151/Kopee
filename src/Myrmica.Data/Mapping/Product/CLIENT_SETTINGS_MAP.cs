@@ -16,6 +16,12 @@ namespace Myrmica.Data.Mapping
             builder.ToTable("CLIENT_SETTINGS");
             builder.HasKey(c => c.ID);
 
+            builder.HasOne(s => s.CLIENT)
+                .WithMany(g => g.CLIENT_SETTINGS)
+                .HasForeignKey(s => s.CLIENT_ID);
+            builder.HasOne(s => s.SETTING_TYPE)
+                .WithMany(g => g.CLIENT_SETTINGS)
+                .HasForeignKey(s => s.SETTING_TYPE_ID);
             base.Configure(builder);
         }
     }

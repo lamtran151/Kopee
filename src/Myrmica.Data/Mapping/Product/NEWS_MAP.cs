@@ -16,6 +16,11 @@ namespace Myrmica.Data.Mapping
             builder.ToTable("NEWS");
             builder.HasKey(c => c.ID);
 
+            builder.HasOne(s => s.CATEGORY)
+                .WithMany(g => g.NEWS)
+                .HasForeignKey(s => s.CATEGORY_ID)
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.SetNull);
             base.Configure(builder);
         }
     }

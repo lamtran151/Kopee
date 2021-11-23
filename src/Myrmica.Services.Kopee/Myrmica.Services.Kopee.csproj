@@ -21,7 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Myrmica.Database\Myrmica.Database.MySQL.csproj" />
     <ProjectReference Include="..\Myrmica.Data\Myrmica.Data.csproj" />
-    <ProjectReference Include="..\Myrmica.Extensions\Myrmica.Extensions.csproj" />
+    <ProjectReference Include="..\Myrmica.Ext\Myrmica.Ext.csproj" />
   </ItemGroup>
 
 </Project>

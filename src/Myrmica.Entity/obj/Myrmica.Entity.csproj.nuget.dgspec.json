@@ -10,15 +10,11 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
         "projectName": "Myrmica.Entity",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
-        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

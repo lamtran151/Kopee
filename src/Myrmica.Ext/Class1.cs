@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Myrmica.Service
+namespace Myrmica.Ext
 {
     public class Class1
     {

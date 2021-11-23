@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Myrmica.Data;
 using Myrmica.Entity;
+using Myrmica.Extensions.Product.Parameters;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interface;
+using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Myrmica.Services.Kopee.Controllers
 {
@@ -10,15 +15,35 @@ namespace Myrmica.Services.Kopee.Controllers
     public class HomeController : ControllerBase
     {
         private readonly IRepository<Demo> _repository;
-        public HomeController(IRepository<Demo> repository)
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly ICategoryService _categoryService;
+        public HomeController(IRepository<Demo> repository, ICategoryRepository categoryRepository, ICategoryService categoryService)
         {
             _repository = repository;
+            _categoryRepository = categoryRepository;
+            _categoryService = categoryService;
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var a = _repository.Table.ToList();
-            return Ok(a);
+            try
+            {
+                var a = await _categoryRepository.GetPagedCategoriesAsync("a", 0, 10);
+                return Ok(a);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
+        }
+        [Route("get-paged-category")]
+        [HttpPost]
+        public async Task<object> GetPagedCategory(PagedParams pr)
+        {
+            var lst = await _categoryService.GetPagedCategoriesAsync(pr.keyword, pr.pageNumber, pr.pageSize);
+            return lst;
         }
     }
 }

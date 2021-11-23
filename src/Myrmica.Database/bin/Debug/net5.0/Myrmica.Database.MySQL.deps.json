@@ -223,6 +223,9 @@
         }
       },
       "Myrmica.Entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.12"
+        },
         "runtime": {
           "Myrmica.Entity.dll": {}
         }

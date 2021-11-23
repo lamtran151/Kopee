@@ -32,3 +32,5 @@ D:\Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.csproj.CopyC
 D:\Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.dll
 D:\Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\ref\Myrmica.Extensions.dll
 D:\Kopee\src\Myrmica.Extensions\obj\Debug\net5.0\Myrmica.Extensions.pdb
+D:\Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Repository.dll
+D:\Kopee\src\Myrmica.Extensions\bin\Debug\net5.0\Myrmica.Repository.pdb

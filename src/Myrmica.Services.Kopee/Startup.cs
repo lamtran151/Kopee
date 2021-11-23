@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Myrmica.Data;
-using Myrmica.Extensions;
+using Myrmica.Ext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +32,7 @@ namespace Myrmica.Services.Kopee
         {
             services.AddDbContext<NopObjectContext>(options =>
             {
-                string connectionString = "Server=127.0.0.1; Port=3306; Database=test; Uid=root; Pwd=;";
+                string connectionString = "Server=127.0.0.1; Port=3306; Database=testdev; Uid=root; Pwd=;";
                 options.UseMySql(connectionString,
                     ServerVersion.AutoDetect(connectionString),
                     mySqlOptions =>
@@ -43,7 +43,7 @@ namespace Myrmica.Services.Kopee
                         mySqlOptions.MigrationsAssembly(MigrationsAssembly)
             );
             });
-            services.AddAdminServices<NopObjectContext>();
+            services.AddAdminServices<NopObjectContext>(Configuration);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

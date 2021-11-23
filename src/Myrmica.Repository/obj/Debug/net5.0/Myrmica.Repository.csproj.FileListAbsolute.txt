@@ -22,3 +22,8 @@ D:\Kopee\src\Myrmica.Repository\obj\Debug\net5.0\Myrmica.Repository.csproj.CoreC
 D:\Kopee\src\Myrmica.Repository\obj\Debug\net5.0\Myrmica.Repository.dll
 D:\Kopee\src\Myrmica.Repository\obj\Debug\net5.0\ref\Myrmica.Repository.dll
 D:\Kopee\src\Myrmica.Repository\obj\Debug\net5.0\Myrmica.Repository.pdb
+D:\Kopee\src\Myrmica.Repository\bin\Debug\net5.0\Myrmica.Data.dll
+D:\Kopee\src\Myrmica.Repository\bin\Debug\net5.0\Myrmica.Entity.dll
+D:\Kopee\src\Myrmica.Repository\bin\Debug\net5.0\Myrmica.Data.pdb
+D:\Kopee\src\Myrmica.Repository\bin\Debug\net5.0\Myrmica.Entity.pdb
+D:\Kopee\src\Myrmica.Repository\obj\Debug\net5.0\Myrmica.Repository.csproj.CopyComplete

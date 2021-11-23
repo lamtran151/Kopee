@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <Compile Remove="FileRepository.cs" />
+    <Compile Remove="Interfaces\IFileRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Myrmica.Data\Myrmica.Data.csproj" />
   </ItemGroup>
 
 </Project>

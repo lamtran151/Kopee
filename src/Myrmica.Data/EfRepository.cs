@@ -81,12 +81,12 @@ namespace Myrmica.Data
         /// </summary>
         /// <param name="id">Identifier</param>
         /// <returns>Entity</returns>
-        public virtual TEntity GetById(object id)
+        public virtual TEntity Find(object id)
         {
             return Entities.Find(id);
         }
 
-        public virtual async Task<TEntity> GetByIdAsync(object id)
+        public virtual async Task<TEntity> FindAsync(object id)
         {
             return await Entities.FindAsync(id);
         }
@@ -95,7 +95,7 @@ namespace Myrmica.Data
         /// Insert entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        public virtual void Insert(TEntity entity)
+        public virtual void Add(TEntity entity)
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
@@ -112,7 +112,7 @@ namespace Myrmica.Data
             }
         }
 
-        public virtual async Task InsertAsync(TEntity entity)
+        public virtual async Task AddAsync(TEntity entity)
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
@@ -133,7 +133,7 @@ namespace Myrmica.Data
         /// Insert entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        public virtual void Insert(IEnumerable<TEntity> entities)
+        public virtual void Add(IEnumerable<TEntity> entities)
         {
             if (entities == null)
                 throw new ArgumentNullException(nameof(entities));
@@ -150,7 +150,7 @@ namespace Myrmica.Data
             }
         }
 
-        public virtual async Task InsertAsync(IEnumerable<TEntity> entities)
+        public virtual async Task AddAsync(IEnumerable<TEntity> entities)
         {
             if (entities == null)
                 throw new ArgumentNullException(nameof(entities));
@@ -254,7 +254,8 @@ namespace Myrmica.Data
 
             try
             {
-                Entities.Remove(entity);
+                //Entities.Remove(entity);
+                Entities.Update(entity);
                 _context.SaveChanges();
             }
             catch (DbUpdateException exception)
@@ -271,7 +272,8 @@ namespace Myrmica.Data
 
             try
             {
-                Entities.Remove(entity);
+                //Entities.Remove(entity);
+                Entities.Update(entity);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException exception)
@@ -292,7 +294,8 @@ namespace Myrmica.Data
 
             try
             {
-                Entities.RemoveRange(entities);
+                //Entities.RemoveRange(entities);
+                Entities.UpdateRange(entities);
                 _context.SaveChanges();
             }
             catch (DbUpdateException exception)
@@ -309,7 +312,8 @@ namespace Myrmica.Data
 
             try
             {
-                Entities.RemoveRange(entities);
+                //Entities.RemoveRange(entities);
+                Entities.UpdateRange(entities);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException exception)

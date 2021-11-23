@@ -5,7 +5,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <Compile Remove="ClientService.cs" />
+    <Compile Remove="ClientSettingService.cs" />
+    <Compile Remove="ContactService.cs" />
+    <Compile Remove="FileService.cs" />
+    <Compile Remove="Interface\IClientService.cs" />
+    <Compile Remove="Interface\IClientSettingService.cs" />
+    <Compile Remove="Interface\IContactService.cs" />
+    <Compile Remove="Interface\IFileService.cs" />
+    <Compile Remove="Interface\IMenuService.cs" />
+    <Compile Remove="Interface\INewsService.cs" />
+    <Compile Remove="Interface\IProductService.cs" />
+    <Compile Remove="Interface\IServiceTypeService.cs" />
+    <Compile Remove="Interface\ISettingTypeService.cs" />
+    <Compile Remove="MenuService.cs" />
+    <Compile Remove="NewsService.cs" />
+    <Compile Remove="ProductService.cs" />
+    <Compile Remove="ServiceTypeService.cs" />
+    <Compile Remove="SettingTypeService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Myrmica.Extensions\Myrmica.Extensions.csproj" />
+    <ProjectReference Include="..\Myrmica.Repository\Myrmica.Repository.csproj" />
   </ItemGroup>
 
 </Project>
