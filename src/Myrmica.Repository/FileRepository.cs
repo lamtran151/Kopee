@@ -1,11 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Myrmica.Repository.Entities.Product;
-using Myrmica.Repository.Interfaces;
+using Myrmica.Entity.File;
 using Myrmica.Repository.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Myrmica.Repository

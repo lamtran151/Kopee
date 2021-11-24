@@ -19,7 +19,7 @@ namespace Myrmica.Extensions.Mappers
                 .ForMember(e => e.SETTING_TYPE_ID, opt => opt.MapFrom(dto => new Guid(dto.settingTypeId)))
                 .ForMember(e => e.CLIENT_ID, opt => opt.MapFrom(dto => new Guid(dto.clientId)))
                 .ForMember(e => e.ID, opt => opt.MapFrom(dto => string.IsNullOrEmpty(dto.id) ? default : new Guid(dto.id)));
-            CreateMap<PagedList<CLIENT_SETTINGS>, PagedList<ClientSettingDto>>(MemberList.Destination).ReverseMap();
+            CreateMap<IPagedList<CLIENT_SETTINGS>, IPagedList<ClientSettingDto>>(MemberList.Destination).ReverseMap();
         }
     }
 }

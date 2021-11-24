@@ -33,9 +33,9 @@ namespace Myrmica.Extensions.Mappers
             return Mapper.Map<ClientDto>(client);
         }
 
-        public static PagedList<ClientDto> ToDto(this PagedList<CLIENT> client)
+        public static IPagedList<ClientDto> ToDto(this IPagedList<CLIENT> client)
         {
-            return Mapper.Map<PagedList<ClientDto>>(client);
+            return Mapper.Map<IPagedList<ClientDto>>(client);
         }
     }
 }

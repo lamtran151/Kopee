@@ -1,8 +1,4 @@
-﻿using Myrmica.Repository.Entities.Product;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Myrmica.Entity.File;
 using System.Threading.Tasks;
 
 namespace Myrmica.Repository.Interfaces

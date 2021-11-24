@@ -1,22 +1,19 @@
-﻿using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.Business.Dtos.Product;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.Business.Shared.Helpers.FileHelpers;
-using Myrmica.Solution.EntityFramework.Entities.Product;
-using Myrmica.Solution.EntityFramework.Extensions.Common;
-using Myrmica.Solution.Business.Shared.Helpers.StringHelper;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
-using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Http;
+using Myrmica.Entity;
+using Myrmica.Extensions.Dtos.Product;
+using Myrmica.Extensions.Helpers.FileHelpers;
+using Myrmica.Extensions.Helpers.StringHelper;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class ProductService : IProductService
     {
@@ -186,12 +183,12 @@ namespace Myrmica.Solution.Business.Services
             return entity.ToDto();
         }
 
-        public async Task<PagedList<ProductDto>> GetPagedProductAsync(string keyword, int pageNumber, int pageSize)
+        public async Task<IPagedList<ProductDto>> GetPagedProductAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await productRepository.GetPagedProductAsync(keyword, pageNumber, pageSize);
             return listEntity.ToDto();
         }
-        public async Task<PagedList<ProductDto>> GetPagedProductByCategoryAsync(string categoryId, int pageNumber, int pageSize)
+        public async Task<IPagedList<ProductDto>> GetPagedProductByCategoryAsync(string categoryId, int pageNumber, int pageSize)
         {
             var listEntity = await productRepository.GetPagedProductByCategoryAsync(categoryId, pageNumber, pageSize);
             return listEntity.ToDto();

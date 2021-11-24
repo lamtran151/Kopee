@@ -1,23 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Net.Http.Headers;
-using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.Business.Dtos.Product;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.Business.Shared.Helpers.FileHelpers;
-using Myrmica.Solution.EntityFramework.Entities.Product;
-using Myrmica.Solution.EntityFramework.Extensions.Common;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
-using Newtonsoft.Json;
+﻿using Myrmica.Entity;
+using Myrmica.Extensions.Dtos.Product;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class ServiceTypeService : IServiceTypeService
     {
@@ -75,7 +65,7 @@ namespace Myrmica.Solution.Business.Services
             return entity.ToDto();
         }
 
-        public async Task<PagedList<ServiceTypeDto>> GetPagedServiceTypeAsync(string keyword, int pageNumber, int pageSize)
+        public async Task<IPagedList<ServiceTypeDto>> GetPagedServiceTypeAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await serviceTypeRepository.GetPagedServiceTypeAsync(keyword, pageNumber, pageSize);
             return listEntity.ToDto();

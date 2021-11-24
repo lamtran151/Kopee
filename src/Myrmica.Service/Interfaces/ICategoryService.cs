@@ -4,7 +4,7 @@ using Myrmica.Extensions.Dtos.Product;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Myrmica.Service.Interface
+namespace Myrmica.Service.Interfaces
 {
     public interface ICategoryService
     {

@@ -39,9 +39,9 @@ namespace Myrmica.Extensions.Mappers
             return Mapper.Map<List<ContactDto>>(category);
         }
 
-        public static PagedList<ContactDto> ToDto(this PagedList<CONTACT> category)
+        public static IPagedList<ContactDto> ToDto(this IPagedList<CONTACT> category)
         {
-            return Mapper.Map<PagedList<ContactDto>>(category);
+            return Mapper.Map<IPagedList<ContactDto>>(category);
         }
     }
 }

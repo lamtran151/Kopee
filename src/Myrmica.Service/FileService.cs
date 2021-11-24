@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.Business.Shared.Helpers.EncrytoHelper;
-using Myrmica.Solution.Business.Shared.Helpers.FileHelpers;
-using Myrmica.Solution.EntityFramework.Entities.Product;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
+using Myrmica.Entity.File;
+using Myrmica.Extensions.Dtos.File;
+using Myrmica.Extensions.Helpers.EncrytoHelper;
+using Myrmica.Extensions.Helpers.FileHelpers;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class FileService : IFileService
     {

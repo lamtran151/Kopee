@@ -15,7 +15,7 @@ namespace Myrmica.Extensions.Mappers
                 .ForMember(dto => dto.id, opt => opt.MapFrom(e => e.ID.ToString()));
             CreateMap<ClientDto, CLIENT>(MemberList.Destination)
                 .ForMember(e => e.ID, opt => opt.MapFrom(dto => string.IsNullOrEmpty(dto.id) ? new Guid() : new Guid(dto.id)));
-            CreateMap<PagedList<CLIENT>, PagedList<ClientDto>>(MemberList.Destination).ReverseMap();
+            CreateMap<IPagedList<CLIENT>, IPagedList<ClientDto>>(MemberList.Destination).ReverseMap();
         }
     }
 }

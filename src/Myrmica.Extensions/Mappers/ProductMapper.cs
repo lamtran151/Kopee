@@ -32,9 +32,9 @@ namespace Myrmica.Extensions.Mappers
         {
             return Mapper.Map<ProductDto>(Product);
         }
-        public static PagedList<ProductDto> ToDto(this PagedList<PRODUCT> product)
+        public static IPagedList<ProductDto> ToDto(this IPagedList<PRODUCT> product)
         {
-            return Mapper.Map<PagedList<ProductDto>>(product);
+            return Mapper.Map<IPagedList<ProductDto>>(product);
         }
         public static List<ProductDto> ToDto(this List<PRODUCT> product)
         {

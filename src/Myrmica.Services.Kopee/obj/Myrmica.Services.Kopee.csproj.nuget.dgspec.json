@@ -10,11 +10,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Database\\Myrmica.Database.MySQL.csproj",
         "projectName": "Myrmica.Database.MySQL",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Database\\Myrmica.Database.MySQL.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Database\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,11 +87,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
         "projectName": "Myrmica.Data",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Data\\Myrmica.Data.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,11 +165,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
         "projectName": "Myrmica.Entity",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Entity\\Myrmica.Entity.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,11 +229,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
         "projectName": "Myrmica.Extensions",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Extensions\\Myrmica.Extensions.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Extensions\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -300,11 +316,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Ext\\Myrmica.Ext.csproj",
         "projectName": "Myrmica.Ext",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Ext\\Myrmica.Ext.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Ext\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -374,11 +394,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Repository\\Myrmica.Repository.csproj",
         "projectName": "Myrmica.Repository",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Repository\\Myrmica.Repository.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -432,11 +456,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
         "projectName": "Myrmica.Services.Kopee",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\Myrmica.Services.Kopee.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Services.Kopee\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -472,6 +500,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.12, )"
@@ -525,11 +557,15 @@
         "projectUniqueName": "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
         "projectName": "Myrmica.Service",
         "projectPath": "D:\\Kopee\\src\\Myrmica.Service\\Myrmica.Service.csproj",
-        "packagesPath": "C:\\Users\\fcmie\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\X1 Carbon\\.nuget\\packages\\",
         "outputPath": "D:\\Kopee\\src\\Myrmica.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fcmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\X1 Carbon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

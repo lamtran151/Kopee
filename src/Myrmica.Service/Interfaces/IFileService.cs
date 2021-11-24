@@ -1,9 +1,9 @@
-﻿using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.EntityFramework.Entities.Product;
+﻿using Myrmica.Entity.File;
+using Myrmica.Extensions.Dtos.File;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services.Interface
+namespace Myrmica.Service.Interfaces
 {
     public interface IFileService
     {

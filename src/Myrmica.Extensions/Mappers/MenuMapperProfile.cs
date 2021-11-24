@@ -25,7 +25,7 @@ namespace Myrmica.Extensions.Mappers
 
             CreateMap<MENU, MenuByClientDto>(MemberList.Destination)
                 .ForMember(e => e.childMenu, opt => opt.MapFrom(e => e.CHILD_MENU));
-            CreateMap<PagedList<MENU>, PagedList<MenuDto>>(MemberList.Destination);
+            CreateMap<IPagedList<MENU>, IPagedList<MenuDto>>(MemberList.Destination);
         }
     }
 }

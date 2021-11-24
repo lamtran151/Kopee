@@ -33,9 +33,9 @@ namespace Myrmica.Extensions.Mappers
             return Mapper.Map<ClientSettingDto>(category);
         }
 
-        public static PagedList<ClientSettingDto> ToDto(this PagedList<CLIENT_SETTINGS> category)
+        public static IPagedList<ClientSettingDto> ToDto(this IPagedList<CLIENT_SETTINGS> category)
         {
-            return Mapper.Map<PagedList<ClientSettingDto>>(category);
+            return Mapper.Map<IPagedList<ClientSettingDto>>(category);
         }
     }
 }

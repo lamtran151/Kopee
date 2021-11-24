@@ -97,19 +97,19 @@ namespace Myrmica.Entity
         //    return this;
         //}
 
-        //public IQueryable<T> ApplyPaging(IQueryable<T> query)
-        //{
-        //    if (PageIndex == 0 && PageSize == int.MaxValue)
-        //    {
-        //        // Paging unnecessary
-        //        return query;
-        //    }
-        //    else
-        //    {
-        //        var skip = PageIndex * PageSize;
-        //        return query.Skip(skip).Take(PageSize);
-        //    }
-        //}
+        public IQueryable<T> ApplyPaging(IQueryable<T> query)
+        {
+            if (PageIndex == 0 && PageSize == int.MaxValue)
+            {
+                // Paging unnecessary
+                return query;
+            }
+            else
+            {
+                var skip = PageIndex * PageSize;
+                return query.Skip(skip).Take(PageSize);
+            }
+        }
 
         //public IPagedList<T> Load(bool force = false)
         //{
@@ -138,7 +138,7 @@ namespace Myrmica.Entity
 
         //    return this;
         //}
-
+        public string CategoryTitle { get; set; }
         public int PageIndex { get; set; }
 
         public int PageSize { get; set; }
@@ -146,16 +146,7 @@ namespace Myrmica.Entity
         {
             get
             {
-                if (PageIndex == 0 && PageSize == int.MaxValue)
-                {
-                    // Paging unnecessary
-                    return SourceQuery.ToList();
-                }
-                else
-                {
-                    var skip = PageIndex * PageSize;
-                    return SourceQuery.Skip(skip).Take(PageSize).ToList();
-                }
+                return ApplyPaging(SourceQuery.AsQueryable()).ToList();
             }
             set { }
         }

@@ -1,15 +1,14 @@
-﻿using Myrmica.Solution.Business.Dtos.Product.MenuDtos;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.EntityFramework.Extensions.Common;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
+﻿using Myrmica.Entity;
+using Myrmica.Extensions.Dtos.Product.MenuDtos;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class MenuService : IMenuService
     {
@@ -90,7 +89,7 @@ namespace Myrmica.Solution.Business.Services
             return entity.ToDto();
         }
 
-        public async Task<PagedList<MenuDto>> GetPagedMenuAsync(string keyword, int pageNumber, int pageSize)
+        public async Task<IPagedList<MenuDto>> GetPagedMenuAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await menuRepository.GetPagedMenuAsync(keyword, pageNumber, pageSize);
             return listEntity.ToDto();

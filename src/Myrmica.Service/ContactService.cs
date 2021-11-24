@@ -1,16 +1,12 @@
-﻿using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.Business.Dtos.Product;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.Business.Shared.Helpers.FileHelpers;
-using Myrmica.Solution.EntityFramework.Extensions.Common;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
+﻿using Myrmica.Entity;
+using Myrmica.Extensions.Dtos.Product;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class ContactService : IContactService
     {
@@ -33,7 +29,7 @@ namespace Myrmica.Solution.Business.Services
             }
             return result;
         }
-        public async Task<PagedList<ContactDto>> GetPagedContactAsync(string keyword, int pageNumber, int pageSize)
+        public async Task<IPagedList<ContactDto>> GetPagedContactAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await contactRepository.GetPagedContactAsync(keyword, pageNumber, pageSize);
             return listEntity.ToDto();

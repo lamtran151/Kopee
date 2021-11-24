@@ -32,7 +32,7 @@ namespace Myrmica.Extensions.Mappers
                 .ForMember(dto => dto.IsSpecial, opt => opt.MapFrom(e => e.IS_SPECIAL))
                 .ForMember(dto => dto.IsDiscount, opt => opt.MapFrom(e => e.IS_DISCOUNT));
 				
-            CreateMap<PagedList<PRODUCT>, PagedList<ProductDto>>(MemberList.Destination).ReverseMap();
+            CreateMap<IPagedList<PRODUCT>, IPagedList<ProductDto>>(MemberList.Destination).ReverseMap();
         }
     }
 }

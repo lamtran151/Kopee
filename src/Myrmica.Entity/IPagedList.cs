@@ -16,8 +16,8 @@ namespace Myrmica.Entity
         /// <summary>
         /// The 0-based current page index
         /// </summary>
-        [DataMember]
-        int PageIndex { get; set; }
+        //[DataMember]
+        //int PageIndex { get; set; }
 
         /// <summary>
         /// The number of items in each page.
@@ -35,47 +35,48 @@ namespace Myrmica.Entity
         /// <summary>
         /// The 1-based current page index
         /// </summary>
-        [DataMember]
-        int PageNumber { get; set; }
+        //[DataMember]
+        //int PageNumber { get; set; }
 
         /// <summary>
         /// The total number of pages.
         /// </summary>
-        [DataMember]
-        int TotalPages { get; }
+        //[DataMember]
+        //int TotalPages { get; }
 
         /// <summary>
         /// Whether there are pages before the current page.
         /// </summary>
-        bool HasPreviousPage { get; }
+        //bool HasPreviousPage { get; }
 
         /// <summary>
         /// Whether there are pages after the current page.
         /// </summary>
-        bool HasNextPage { get; }
+        //bool HasNextPage { get; }
 
         /// <summary>
         /// The 1-based index of the first item in the page.
         /// </summary>
-        [DataMember]
-        int FirstItemIndex { get; }
+        //[DataMember]
+        //int FirstItemIndex { get; }
 
         /// <summary>
         /// The 1-based index of the last item in the page.
         /// </summary>
-        [DataMember]
-        int LastItemIndex { get; }
+        //[DataMember]
+        //int LastItemIndex { get; }
 
         /// <summary>
         /// Whether the page is the first page
         /// </summary>
-        bool IsFirstPage { get; }
+        //bool IsFirstPage { get; }
 
         /// <summary>
         /// Whether the page is the last page
         /// </summary>
-        bool IsLastPage { get; }
+        //bool IsLastPage { get; }
         List<T> Data { get; set;}
+        string CategoryTitle { get; set; }
     }
 
 
@@ -87,7 +88,7 @@ namespace Myrmica.Entity
         /// <summary>
         /// Gets underlying query without any paging applied
         /// </summary>
-        List<T> SourceQuery { get; }
+        //List<T> SourceQuery { get; }
 
         /// <summary>
         /// Allows modification of the underlying query before it is executed.

@@ -4,7 +4,7 @@ using Myrmica.Data;
 using Myrmica.Repository;
 using Myrmica.Repository.Interfaces;
 using Myrmica.Service;
-using Myrmica.Service.Interface;
+using Myrmica.Service.Interfaces;
 using System;
 
 namespace Myrmica.Ext
@@ -32,14 +32,14 @@ namespace Myrmica.Ext
             //Services
             //services.AddTransient<IClientService, ClientService>();
             services.AddTransient<ICategoryService, CategoryService>();
-            //services.AddTransient<IClientService, ClientService>();
-            //services.AddTransient<IClientSettingService, ClientSettingService>();
-            //services.AddTransient<IContactService, ContactService>();
-            //services.AddTransient<IMenuService, MenuService>();
-            //services.AddTransient<INewsService, NewsService>();
-            //services.AddTransient<IProductService, ProductService>();
-            //services.AddTransient<IServiceTypeService, ServiceTypeService>();
-            //services.AddTransient<ISettingTypeService, SettingTypeService>();
+            services.AddTransient<IClientService, ClientService>();
+            services.AddTransient<IClientSettingService, ClientSettingService>();
+            services.AddTransient<IContactService, ContactService>();
+            services.AddTransient<IMenuService, MenuService>();
+            services.AddTransient<INewsService, NewsService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IServiceTypeService, ServiceTypeService>();
+            services.AddTransient<ISettingTypeService, SettingTypeService>();
             var fileApi = configuration.GetSection("FileStorageApi").Value;
             services.AddHttpClient<ICategoryService, CategoryService>(client => {
                 client.BaseAddress = new Uri(fileApi);

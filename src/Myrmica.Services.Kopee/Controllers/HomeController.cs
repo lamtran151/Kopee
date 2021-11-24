@@ -3,9 +3,8 @@ using Myrmica.Data;
 using Myrmica.Entity;
 using Myrmica.Extensions.Product.Parameters;
 using Myrmica.Repository.Interfaces;
-using Myrmica.Service.Interface;
+using Myrmica.Service.Interfaces;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Myrmica.Services.Kopee.Controllers

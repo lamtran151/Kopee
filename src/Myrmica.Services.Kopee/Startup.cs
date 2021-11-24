@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,15 @@ namespace Myrmica.Services.Kopee
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(
+                opt => opt.AddPolicy("MyrmicaCors",
+                    builder => builder
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    //.AllowCredentials()
+                )
+            );
             services.AddDbContext<NopObjectContext>(options =>
             {
                 string connectionString = "Server=127.0.0.1; Port=3306; Database=testdev; Uid=root; Pwd=;";
@@ -65,6 +75,8 @@ namespace Myrmica.Services.Kopee
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("MyrmicaCors");
 
             app.UseAuthorization();
 

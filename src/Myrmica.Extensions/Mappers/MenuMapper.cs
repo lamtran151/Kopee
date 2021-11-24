@@ -34,9 +34,9 @@ namespace Myrmica.Extensions.Mappers
             return Mapper.Map<MenuDto>(category);
         }
 
-        public static PagedList<MenuDto> ToDto(this PagedList<MENU> category)
+        public static IPagedList<MenuDto> ToDto(this IPagedList<MENU> category)
         {
-            return Mapper.Map<PagedList<MenuDto>>(category);
+            return Mapper.Map<IPagedList<MenuDto>>(category);
         }
 
         public static List<MenuDto> ToDto(this List<MENU> category)

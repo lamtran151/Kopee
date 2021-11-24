@@ -4,7 +4,7 @@ using Myrmica.Extensions.Dtos.Product;
 using Myrmica.Extensions.Helpers.FileHelpers;
 using Myrmica.Extensions.Mappers;
 using Myrmica.Repository.Interfaces;
-using Myrmica.Service.Interface;
+using Myrmica.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;

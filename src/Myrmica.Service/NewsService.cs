@@ -1,24 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Net.Http.Headers;
-using Myrmica.Solution.Business.Dtos.File;
-using Myrmica.Solution.Business.Dtos.Product;
-using Myrmica.Solution.Business.Dtos.Product.News;
-using Myrmica.Solution.Business.Mappers;
-using Myrmica.Solution.Business.Services.Interface;
-using Myrmica.Solution.Business.Shared.Helpers.FileHelpers;
-using Myrmica.Solution.EntityFramework.Entities.Product;
-using Myrmica.Solution.EntityFramework.Extensions.Common;
-using Myrmica.Solution.EntityFramework.Repositories.Interfaces;
-using Newtonsoft.Json;
+using Myrmica.Entity;
+using Myrmica.Extensions.Dtos.Product.News;
+using Myrmica.Extensions.Helpers.FileHelpers;
+using Myrmica.Extensions.Mappers;
+using Myrmica.Repository.Interfaces;
+using Myrmica.Service.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Myrmica.Solution.Business.Services
+namespace Myrmica.Service
 {
     public class NewsService : INewsService
     {
@@ -129,12 +121,12 @@ namespace Myrmica.Solution.Business.Services
             return entity.ToDto();
         }
 
-        public async Task<PagedList<NewsDto>> GetPagedNewsAsync(string keyword, int pageNumber, int pageSize)
+        public async Task<IPagedList<NewsDto>> GetPagedNewsAsync(string keyword, int pageNumber, int pageSize)
         {
             var listEntity = await newsRepository.GetPagedNewsAsync(keyword, pageNumber, pageSize);
             return listEntity.ToDto();
         }
-        public async Task<PagedList<NewsDto>> GetPagedNewsByCategoryRouteAsync(string categoryRoute, int pageNumber, int pageSize)
+        public async Task<IPagedList<NewsDto>> GetPagedNewsByCategoryRouteAsync(string categoryRoute, int pageNumber, int pageSize)
         {
             var cate = await categoryRepository.GetCategoryByRouteAsync(categoryRoute);
             if (cate != null)

@@ -33,9 +33,9 @@ namespace Myrmica.Extensions.Mappers
             return Mapper.Map<SettingTypeDto>(SettingType);
         }
 
-        public static PagedList<SettingTypeDto> ToDto(this PagedList<SETTING_TYPE> SettingType)
+        public static IPagedList<SettingTypeDto> ToDto(this IPagedList<SETTING_TYPE> SettingType)
         {
-            return Mapper.Map<PagedList<SettingTypeDto>>(SettingType);
+            return Mapper.Map<IPagedList<SettingTypeDto>>(SettingType);
         }
     }
 }

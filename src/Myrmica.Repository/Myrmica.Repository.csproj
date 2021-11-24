@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Compile Remove="FileRepository.cs" />
-    <Compile Remove="Interfaces\IFileRepository.cs" />
   </ItemGroup>
 
   <ItemGroup>
